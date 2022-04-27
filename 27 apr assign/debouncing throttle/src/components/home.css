@@ -1,0 +1,12 @@
+.search_result{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    margin: 20px;
+    grid-gap: 3%;
+}
+.movie_div{
+    padding: 10px;
+     background-color: rgb(27, 175, 212);
+     color: rgb(47, 35, 155);
+     font-family: cursive;
+}
