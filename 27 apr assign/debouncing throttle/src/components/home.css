@@ -1,7 +1,7 @@
 .search_result{
     display: grid;
     grid-template-columns: repeat(3,30%);
-    margin: 20px;
+    margin: 40px;
     grid-gap: 3%;
 }
 .movie_div{
