@@ -16,3 +16,33 @@ function divisibleSumPairs(n, k, ar) {
     return count
     
 }
+//migratory birds
+// Given an array of bird sightings where every element represents a bird type id, determine the id of the most frequently sighted type. If more than 1 type has been spotted that maximum amount, return the smallest of their ids.
+function migratoryBirds(arr) {
+    // Write your code here
+  let obj ={}
+  
+  for(let i=0;i<arr.length;i++){
+      if(obj[arr[i]]==undefined){
+          obj[arr[i]] =1
+      }else{
+          obj[arr[i]]=obj[arr[i]]+1
+      }
+  }
+  let max =-99999
+  let maxkey
+  for(let x in obj){
+      if(obj[x]>max){
+          max=obj[x]
+          maxkey =x
+      }
+  }
+    // for (key in counts) {
+    //   if (counts[key] > max) {
+    //     max = counts[key];
+    //     maxKey = key;
+    //   }
+    // }
+  return maxkey
+ // console.log(max)
+}
