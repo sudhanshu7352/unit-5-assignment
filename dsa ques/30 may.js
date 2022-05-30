@@ -103,3 +103,23 @@ function longestSubarray(arr) {
 }
 
 //usernames changes
+function possibleChanges(usernames) {
+    // Write your code here
+    let ans = []
+    for (let i = 0; i < usernames.length; i++) {
+        let temp = usernames[i]
+        let flag = 0
+        for (let j = 0;j< temp.length; j++) {
+            if ((temp[j] ) > (temp[j + 1] )) {
+                ans.push("YES")
+                flag = 1
+                break
+            }
+        }
+        if(flag==0){
+            ans.push("NO")
+        } 
+    }
+  //  console.log(ans)
+    return ans
+}
