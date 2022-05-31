@@ -78,7 +78,5 @@ function pageCount(n, p) {
         // console.log(s)
          return s
      }
-    //  while(temp<n){
-         
-    //  }
+    
 }
