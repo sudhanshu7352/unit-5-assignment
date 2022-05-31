@@ -20,3 +20,27 @@ function getTotalX(a, b) {
   }
   return ans.length
 }
+//There is a large pile of socks that must be paired by color. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
+function sockMerchant(n, ar) {
+    // Write your code here
+  let obj={}
+  for(let i=0;i<n;i++){
+      if(obj[ar[i]] ==undefined){
+          obj[ar[i]]=1
+      }else{
+          obj[ar[i]] =obj[ar[i]]+1
+      }
+  }
+  //console.log(obj)
+  let count =0
+  for(let x in obj){
+      if(obj[x]>1){
+      if(obj[x]%2 ==0){
+          count +=obj[x]/2
+      }else{
+          count +=(obj[x]-1)/2
+      }
+      }
+  }
+  return count
+}
