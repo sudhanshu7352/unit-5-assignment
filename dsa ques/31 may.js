@@ -107,3 +107,26 @@ function countingValleys(steps, path) {
     }
     return valleys
 }
+//elctronics shop
+//A person wants to determine the most expensive computer keyboard and USB drive that can be purchased with a give budget. Given price lists for keyboards and USB drives and a budget, find the cost to buy them. If it is not possible to buy both items, return .
+
+function getMoneySpent(keyboards, drives, b) {
+    /*
+     * Write your code here.
+     */
+    
+    let ans=0
+    // let k =0
+    // let d=0
+   for(let i=0;i<keyboards.length;i++){
+       for(let j=0;j<drives.length;j++){
+           if((keyboards[i]+drives[j])>ans && b >=(keyboards[i]+drives[j])){ans =(keyboards[i]+drives[j])
+           }
+       }
+   }
+    if(ans==0){
+        return -1
+    }else{
+        return ans
+    }
+}
