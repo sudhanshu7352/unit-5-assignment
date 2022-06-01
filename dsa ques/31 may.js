@@ -80,3 +80,30 @@ function pageCount(n, p) {
      }
     
 }
+
+// 1 june
+//counting valleys
+// Given the sequence of up and down steps during a hike, find and print the number of valleys walked through.
+
+function countingValleys(steps, path) {
+    // Write your code here
+    let below_sea =false
+    let valleys =0
+    let level =0
+    for(let i=0;i<steps;i++){
+        if(path[i] == 'D'){
+            level-- 
+        }
+        if(path[i] =='U'){
+            level++
+        }
+        if(level<0){
+            below_sea =true
+        }
+        if(below_sea && level==0){
+            valleys++
+            below_sea =false
+        }
+    }
+    return valleys
+}
