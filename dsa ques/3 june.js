@@ -53,3 +53,28 @@ function designerPdfViewer(h, word) {
     }
     return tallest*word.length
 }
+//Utopian tree
+// Sample Input
+
+// 3
+// 0
+// 1
+// 4
+// Sample Output
+
+// 1
+// 2
+// 7
+
+function utopianTree(n) {
+    // Write your code here
+    let height =1
+   for(let i=1;i<=n;i++){
+       if(i%2==1){
+           height *=2
+       }else if(i%2==0) {
+           height +=1
+       }
+   }
+   return height
+}
