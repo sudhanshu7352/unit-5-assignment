@@ -23,3 +23,9 @@ function hurdleRace(k, height) {
       return 0
   }
 }
+// let btn=document.getElementById("btn")
+// btn.addEventListener(onclick,add)
+
+// function add(){
+//     btn.innerHTML +=1
+// }
