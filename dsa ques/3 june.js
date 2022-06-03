@@ -78,3 +78,18 @@ function utopianTree(n) {
    }
    return height
 }
+//angry professor
+function angryProfessor(k, a) {
+    // Write your code here
+  let res=0
+  for(let i=0;i<a.length;i++){
+      if(a[i]<=0){
+          res++
+      }
+  }
+ if(res >= k){
+     return "NO"
+ }else{
+     return "YES"
+ }
+}
