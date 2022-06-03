@@ -29,3 +29,27 @@ function hurdleRace(k, height) {
 // function add(){
 //     btn.innerHTML +=1
 // }
+//designer pdf viwer
+//Sample Input 0
+
+// 1 3 1 3 1 4 1 3 2 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
+// abc
+// Sample Output 0
+
+// 9
+
+
+function designerPdfViewer(h, word) {
+    // Write your code here
+    let tallest =0
+    let index=0
+    
+    for(let i=0;i<word.length;i++){
+        index =word.charCodeAt(i)-97
+        
+        if(h[index]>tallest){
+            tallest =h[index]
+        }
+    }
+    return tallest*word.length
+}
