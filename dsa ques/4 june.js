@@ -51,3 +51,28 @@ while (true) {
   }
 
 }
+//beautiful days of movies
+//Sample Input
+
+// 20 23 6
+// Sample Output
+
+// 2
+function beautifulDays(i, j, k) {
+    // Write your code here
+    let count= 0
+  for(let a=i;a<=j;a++){
+      let b=a.toString().split("").reverse().join("")
+      let ans =Math.abs((a-b)/k)
+      if(Number.isInteger(ans)){
+          count++
+      }
+  }
+  return count
+}
+function factorial(n){
+    if(n==0){
+        return 1
+    }
+    return n*factorial(n-1)
+}
