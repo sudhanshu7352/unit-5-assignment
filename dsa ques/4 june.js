@@ -89,3 +89,16 @@ function vowelsAndConsonants(s) {
         }
     }
 }
+function getSecondLargest(nums) {
+    // Complete the function
+    let temp=nums.sort((a,b)=>a-b)
+    let x= temp[temp.length-1]
+   // console.log(temp)
+    for(let i=temp.length-1;i>=0;i--){
+      //  console.log(temp[i])
+        if(temp[i]<x){
+            return (temp[i])
+            break
+        }
+    }
+}
