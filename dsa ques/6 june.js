@@ -21,3 +21,29 @@ function saveThePrisoner(n, m, s) {
     return (m-1+s)%n ||n
 
 }
+//circularArrayRotation
+
+/*
+ * Complete the 'circularArrayRotation' function below.
+ *
+ * The function is expected to return an INTEGER_ARRAY.
+ * The function accepts following parameters:
+ *  1. INTEGER_ARRAY a
+ *  2. INTEGER k
+ *  3. INTEGER_ARRAY queries
+ */
+
+function circularArrayRotation(a, k, queries) {
+    // Write your code here
+   let temp=k
+   while(temp>0){
+       a.unshift(a.pop())
+       temp--
+   }
+   for(let i=0;i<queries.length;i++){
+      
+        queries[i] =(a[queries[i]])
+   }
+
+return queries
+}
