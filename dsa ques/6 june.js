@@ -9,3 +9,15 @@ for(let i=0;i<arr.length;i++){
     }
 }
 console.log(obj)
+//save the prisoners
+function saveThePrisoner(n, m, s) {
+    // Write your code here
+    // const ans =(((m % n)+s)%n)-1
+    // if(ans==0){
+    //     return n
+    // }else{
+    //     return ans
+    // }
+    return (m-1+s)%n ||n
+
+}
