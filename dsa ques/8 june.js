@@ -37,7 +37,7 @@ function extraLongFactorials(n) {
   console.log(sum.toString())
  // return sum
  }
-//beautiful triplets
+//beautiful triplets YSS
 function beautifulTriplets(d, arr) {
     // Write your code here
    let count=0
