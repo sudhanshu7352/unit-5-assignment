@@ -11,3 +11,16 @@ function modifyArray(nums) {
     let newArray =nums.map((e)=>e%2==0?e*2:e*3)
     return newArray
 }
+//find digits
+function findDigits(n) {
+    // Write your code here
+  let str = n.toString()
+ // console.log(str)
+  let count=0
+  for(let i=0;i<str.length;i++){
+      if(n%str[i]==0){
+          count++
+      }
+  }
+  return count
+}
