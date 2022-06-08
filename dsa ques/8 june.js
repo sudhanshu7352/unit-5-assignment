@@ -24,3 +24,16 @@ function findDigits(n) {
   }
   return count
 }
+//Extra long factorial
+function extraLongFactorials(n) {
+    // Write your code here
+    n =BigInt(n)
+    
+    let sum=BigInt(1)
+  while(n>0){
+     sum =sum*n
+     n-- 
+  }
+  console.log(sum.toString())
+ // return sum
+ }
