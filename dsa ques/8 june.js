@@ -37,3 +37,15 @@ function extraLongFactorials(n) {
   console.log(sum.toString())
  // return sum
  }
+//beautiful triplets
+function beautifulTriplets(d, arr) {
+    // Write your code here
+   let count=0
+   for(let i=0;i<arr.length;i++){
+       if(arr.includes(arr[i]+d) && arr.includes(arr[i]+d*2)){
+           count++
+       }
+    
+   }
+   return count
+}
