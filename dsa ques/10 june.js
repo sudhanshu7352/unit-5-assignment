@@ -1,10 +1,10 @@
-//merge sort
+//merge sort 
 function merge(arr, l, m, r)
 {
     var n1 = m - l + 1;
     var n2 = r - m;
  
-    // Create temp arrays
+    // Create 2 temp arrays
     var L = new Array(n1);
     var R = new Array(n2);
  
