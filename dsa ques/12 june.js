@@ -22,3 +22,22 @@ function jumpingOnClouds(c, k) {
             return energy
    
    }
+
+   //append and delete
+   function appendAndDelete(s, t, k) {
+    // Write your code here
+   let same=""
+   for(let i=0;i<s.length &&i<t.length;i++){
+       if(s[i] !=t[i]){
+           break
+       }else{
+           same +=s[i]
+       }
+   }
+   const min =(s.length-same.length)+(t.length-same.length)
+   
+   const max =s.length+t.length
+   const possible = (k>=max) || (k>=min  && min %2 ==k%2 )
+   
+   return possible ? "Yes" :"No"
+}
