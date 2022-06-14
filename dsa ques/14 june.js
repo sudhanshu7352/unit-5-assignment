@@ -18,3 +18,18 @@ function repeatedString(s, n) {
    }
    return ans
 }
+//squares betwwen 2 no.
+function squares(a, b) {
+    // Write your code here
+    let res =0
+   for(let i=1;i<=b;i++){
+       let sq =i*i
+       if(sq >=a && sq<=b){
+           res++
+       }
+       if(sq>b){
+           break
+       }
+   }
+   return res
+}
